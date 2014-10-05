@@ -4,8 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script> 	
+$(document).ready(function(){
+	$("#myButton").click(function(){
+
+		var input = $("#myInput").val();
+		$("#list").append('<li class="item">'+input+'</li>');
+			$('$myInput').val(''); // This sets the input to nothing after the input is added to the ordered list
+	})
+})
+</script>
+
+
 </head>
 <body>
+
 
 <header> 
 	<h1>Shopping List</h1>
@@ -14,13 +29,16 @@
 
 <div id="container">
 	<section class="side">
- 		<ul>
- 			<li class="item">Bread</li>
- 			<li class="item">Juice</li>
- 			<li class="item">Cereal</li>
- 			<li id="editing">Eggs <span id="save">Save</span></li> 
- 			<li id="new"> New</li>
- 		</ul>
+		<div id= "list">
+ 			<ol>
+ 				<li class="item">Bread</li>
+ 				<li class="item">Juice</li>
+ 				<li class="item">Cereal</li>
+			</ol>
+
+ 					<input type ="input" name = "myInput" placeholder ="New Item" >
+ 					<button name = "myButton"> Save </button>
+		</div>
 	</section>
 	
 	<section class="side">
@@ -34,6 +52,8 @@
 </div>
 
 <footer> shoppinglist&copy; by alex nimmons 2014</footer>
+
+
 
 </body>
 </html>

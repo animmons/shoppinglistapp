@@ -1,37 +1,150 @@
-/* 
 
-======== TABLE OF CONTENTS ======== 
+/* SHOPPING LIST APP 
+Table of Contents 
 
-= Global settings
-= Primary layout
-= Secondary layout
-= Tertiary layout
-= Text-related treatments
-= Images, links and other features
-= General styles
-= General classes 
-= Miscellaneous 
+1. Header 
+2. Structure
+3. Nav
+4. Search 
+5. Headings
+6. Lists
+7. Forms
+8. Links
+9. Type
+10. Misc.
+11. Universal 
+12. Comments 
 
-
-== COLORS ==
-
-== FONTS == 
-
-
+*/ 
 
 
 
-*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =HEADER  */ 
 
-* {
-	text-align: center;
-	/* outline: 1px solid pink; */
+
+header {
+	background-color:#ffcf53;
+	min-width: 600px;
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =STRUCTURE  */ 
 
 body {
-	margin: 0;
 	background-color: #FDF5E6;
+	margin: 0;
 }
+
+/* #button {
+	color: #d52b5a;
+	display:inline;
+	font-family:'Gravity-Book';
+	font-size:1.8em;
+	font-weight:bolder;
+	margin:10px;
+	padding:5px 25px;
+	text-shadow: 1px 2px black;
+	width:100px;
+} */
+
+.side {
+	float: left;
+	min-width: 500px;	
+	width: 49%;
+}
+
+footer {
+	background-color: #ffcf53 ;
+	bottom:0;
+	clear:both;
+	color:#fa536d;
+	font-family:'Gravity-Book';
+	font-size: 0.8em;
+	margin: 0 auto;
+	padding: 5px;
+	position:fixed;
+	width: 100%;
+}
+
+
+#container {
+	max-width: 1100px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =HEADINGS  */ 
+
+
+h2 {
+
+	color: white;
+	font-family:'Gravity-Book';
+	font-size:1.4em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	margin-top:20px;
+	padding:5px;
+}
+
+h1 {
+	color:#fa536d;
+	font-family:'laChatteaMaman';
+	font-size:7.5em;
+	font-weight:lighter;
+	height:35px;
+	letter-spacing:2px;
+	text-shadow:2px 2px black;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =LISTS  */ 
+
+li {
+	border-bottom: 1px dotted #E0DFDB; 
+	display: block;
+	font-family:'Gravity-Book';
+	font-size:2em;
+	margin:auto;
+	max-width: 700px;	
+	min-width: 500px;
+	padding: 5px;
+	text-align: left;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =FORMS  */
+
+#form  {
+ 	display: none;
+ } 
+
+ #new:hover  {
+	opacity: 1;
+	cursor:pointer;
+	font-size:2em;
+	text-shadow: none;
+}
+
+#save:hover  {
+	opacity: 1;
+	cursor:pointer;
+	text-shadow: none;
+}
+
+#editing {
+	border: 1px solid black;
+
+}
+
+#save {
+	font-size: 20px;
+}
+
+#new, #save {
+	color: #fa536d;
+	cursor: pointer;
+	font-weight: bold;
+	text-align: right;
+	opacity: 0.8;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =TYPE  */ 
 
 @font-face {
   font-family: 'laChatteaMaman';
@@ -43,112 +156,30 @@ body {
   src:url('Gravity-Book.ttf') format('truetype');
  }
 
-.save {
-	font-size: 20px;
-}
-
-.new, .save {
-	text-align: right;
-	color:#fa536d;;
-	cursor: pointer;
-	font-weight: bold;
-}
-
-
-h2 {
-	font-family:'Gravity-Book';
-	border:5px solid #ffcf53;
-	padding:5px;
-	margin-top:20px;
-	font-weight: lighter;
-	font-size:1.4em;
-	color: white;
-	letter-spacing: 1px;
-
-}
-
-h1 {
-	font-family:'laChatteaMaman';
-	font-size:7.5em;
-	text-shadow:2px 2px black;
-	letter-spacing:2px;
-	font-weight:lighter;
-	color:#fa536d;
-	height:35px;
-}
-
-.button:hover  {
-	color:white;
-	font-size:2em;
-	cursor:pointer;
-	text-shadow: none;
-}
-
-.button {
-	font-size:1.8em;
-	width:100px;
-	display:inline;
-	padding:5px 25px;
-	font-family:'Gravity-Book';
-	margin:10px;
-	font-weight:bolder;
-	color:#d52b5a;
-	text-shadow: 1px 2px black;
-}
-
-header {
-	background-color:#ffcf53;
-	min-width: 600px;
-}
-
 .checked-off {
 	color: gray;
-	font-style: italic;
 	font-size: 1.5em;
+	font-style: italic;
 }
 
-li {
-	padding: 5px;
-	font-family:'Gravity-Book';
-	border-bottom: 1px dotted #E0DFDB; 
-	font-size:2em;
-	display: block;
-	text-align: left;
-	min-width: 500px;
-	max-width: 700px;
-	margin:auto;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =UNIVERSAL  */ 
+
+* {
+	text-align: center;
 }
 
-.side {
-	width: 49%;
-	float: left;
-	min-width: 500px;
-}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =COMMENTS 
 
+>>>>>>>>>>>> =COLOR GUIDE= <<<<<<<<<<<<
 
-
-.editing {
-	border: 1px solid black;
-
-}
-
-footer {
-	background-color: #ffcf53 ;
-	font-size: 0.8em;
-	color:#fa536d;
-	width: 100%;
-	font-family:'Gravity-Book';
-	padding: 5px;
-	margin: 0 auto;
-	clear:both;
-	position:fixed;
-	bottom:0;
-
-}
-
-
-#container {
-	max-width: 1100px;
-	margin
-}
+Header & Footer BG    :::: #ffcf53
+Body BG               :::: #FDF5E6 		
+Title Text 			  :::: #fa536d
+Buttons Text      	  :::: #fa536d
+Footer Text           :::: #fa536d
+List Border           :::: #E0DFDB
+Checked-Off Items     :::: Gray
+Editing Input Border  :::: Black
+Title Shadow 		  :::: Black 
+Instructions Text     :::: White
 
