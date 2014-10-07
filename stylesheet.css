@@ -111,40 +111,28 @@ li {
 	text-align: left;
 }
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>> =FORMS  */
-
-#form  {
- 	display: none;
- } 
-
- #new:hover  {
-	opacity: 1;
-	cursor:pointer;
-	font-size:2em;
-	text-shadow: none;
-}
-
-#save:hover  {
-	opacity: 1;
-	cursor:pointer;
-	text-shadow: none;
-}
-
 #editing {
 	border: 1px solid black;
 
 }
 
-#save {
-	font-size: 20px;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> =FORMS  */ 
+
+input {
+	width: 500px;
+	height: 30px;
+	max-width: 700px;	
+	min-width: 500px;
+	font-size:1.5em;
 }
 
-#new, #save {
-	color: #fa536d;
-	cursor: pointer;
-	font-weight: bold;
-	text-align: right;
-	opacity: 0.8;
+button {
+	background-color:#fa536d; 
+	padding: 8px 18px;
+	color: white;
+	border: 5px solid white;
+	font-size: 1em;
+	font-family:'Gravity-Book';
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> =TYPE  */ 

@@ -6,18 +6,19 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-	<script> 	
+<script> 	
 $(document).ready(function(){
+	console.log("test");
 	$("#myButton").click(function(){
+		console.log("fire");
+		var input = $("#myInput").val() 
+		console.log(input);
+		$("#list").append("<li class='item'>"+input+"</li>");
+			$("#myInput").val(""); 
 
-		var input = $("#myInput").val();
-		$("#list").append('<li class="item">'+input+'</li>');
-			$('$myInput').val(''); // This sets the input to nothing after the input is added to the ordered list
 	})
 })
 </script>
-
-
 </head>
 <body>
 
@@ -29,16 +30,16 @@ $(document).ready(function(){
 
 <div id="container">
 	<section class="side">
-		<div id= "list">
- 			<ol>
+		
+ 			<ol id= "list">
+ 				<input type ="text" name = "input" id ="myInput" placeholder ="Add a new item here!" >
+ 				<button name = "save" id = "myButton"> Save </button>
+
  				<li class="item">Bread</li>
  				<li class="item">Juice</li>
  				<li class="item">Cereal</li>
 			</ol>
-
- 					<input type ="input" name = "myInput" placeholder ="New Item" >
- 					<button name = "myButton"> Save </button>
-		</div>
+		
 	</section>
 	
 	<section class="side">
