@@ -5,20 +5,12 @@
 	<title>Shopping List</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="app.js"> </script>
 
-<script> 	
-$(document).ready(function(){
-	console.log("test");
-	$("#myButton").click(function(){
-		console.log("fire");
-		var input = $("#myInput").val() 
-		console.log(input);
-		$("#list").append("<li class='item'>"+input+"</li>");
-			$("#myInput").val(""); 
 
-	})
-})
-</script>
+
+
+
 </head>
 <body>
 
@@ -30,27 +22,19 @@ $(document).ready(function(){
 
 <div id="container">
 	<section class="side">
-		
  			<ol id= "list">
- 				<input type ="text" name = "input" id ="myInput" placeholder ="Add a new item here!" >
- 				<button name = "save" id = "myButton"> Save </button>
-
- 				<li class="item">Bread</li>
- 				<li class="item">Juice</li>
- 				<li class="item">Cereal</li>
+ 				<input type="text" name="input" id="myInput" placeholder="Add a new item here!" >
+ 				<button name="save" id="myButton"> Save </button>
 			</ol>
-		
 	</section>
-	
-	<section class="side">
- 		<ul>
- 			<li class="checked-off">Milk</li>
- 			<li class="checked-off">Bacon</li>
- 			<li class="checked-off">Apples</li>
- 			<li class="checked-off">Soup</li>
- 		</ul>
+	<section class="lower">
+		<ul class="lowerList">
+			
+			
+		</ul>
 	</section>
 </div>
+
 
 <footer> shoppinglist&copy; by alex nimmons 2014</footer>
 

@@ -100,20 +100,43 @@ h1 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> =LISTS  */ 
 
 li {
-	border-bottom: 1px dotted #E0DFDB; 
 	display: block;
-	font-family:'Gravity-Book';
-	font-size:2em;
 	margin:auto;
 	max-width: 700px;	
 	min-width: 500px;
 	padding: 5px;
 	text-align: left;
+	font-family:'Gravity-Book';
+}
+
+.item {
+	font-size:2em;
+	color: black;
+	font-style: none;
+}
+
+
+.checked-off {
+	color: gray;
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+
+
+ol li{
+	border-bottom: 1px dotted #E0DFDB; 
 }
 
 #editing {
 	border: 1px solid black;
 
+}
+
+
+
+li:hover {
+	cursor: pointer;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> =FORMS  */ 
@@ -146,12 +169,6 @@ button {
   font-family:'Gravity-Book';
   src:url('Gravity-Book.ttf') format('truetype');
  }
-
-.checked-off {
-	color: gray;
-	font-size: 1.5em;
-	font-style: italic;
-}
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>> =UNIVERSAL  */ 
 
